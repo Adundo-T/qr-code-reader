@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generate Personal QR Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="index.html">Scan QR</a> | <a href="generate.html">Generate QR</a> 
+  <h1>Generate Your Personal QR Code</h1>
+  <form id="qr-form">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <input type="email" id="email" placeholder="Email" />
+    <textarea id="notes" placeholder="Notes"></textarea>
+    <button type="submit">Generate QR</button>
+  </form>
+
+  <div id="qrcode"></div>
+  <a id="download-btn" style="display: none;" download="my-qrcode.png">Download QR</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="generate.js"></script>
+</body>
+</html>

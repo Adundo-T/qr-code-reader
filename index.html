@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Reader</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Load QR code library -->
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html">Scan QR</a> | <a href="generate.html">Generate QR</a>
+    <h1>QR Code Reader</h1>
+    <div id="reader"></div>
+    <button id="toggle-btn">Pause</button>
+    <button id="switch-btn">Switch Camera</button>
+    <p id="result">Scan a QR code...</p>
+
+    <div id="history">
+      <h3>Scan History</h3>
+      <ul id="history-list"></ul>
+      <button id="download-history">Download History</button>
+      <button id="clear-history">Clear History</button>
+      <button id="dark-mode-toggle">Dark Mode</button>
+    </div>
+      
+  </div>
+</body>
+</html>
+
